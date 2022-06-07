@@ -11,6 +11,7 @@ import SwiftUI
 struct swift_serverdriven_uiApp: App {
     var body: some Scene {
         WindowGroup {
+            let _ = UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
             ContentView()
         }
     }

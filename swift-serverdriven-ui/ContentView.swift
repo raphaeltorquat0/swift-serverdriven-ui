@@ -1,16 +1,25 @@
-//
-//  ContentView.swift
-//  swift-serverdriven-ui
-//
-//  Created by Raphael Torquato on 06/06/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel: PetListViewModel
+    
+    init() {
+        _viewModel = StateObject(wrappedValue: PetListViewModel(service: Webervice()))
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(viewModel.components, id: \.id) { component in
+                    component.render()
+                }
+                .navigationTitle("Pets")
+            }
+            .listStyle(.plain)
+            .task {
+                await viewModel.load()
+            }
+        }
     }
 }
 

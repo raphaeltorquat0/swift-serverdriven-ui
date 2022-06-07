@@ -1,0 +1,44 @@
+{
+   "pageTitle":"Pets",
+   "components":[
+      {
+         "type":"featuredImage",
+         "data":{
+            "imageUrl":"https://s2.glbimg.com/kmbgBzKPL0URISIQenPiAKo4ORI=/e.glbimg.com/og/ed/f/original/2017/08/23/5c147f01-dff6-4952-98a0-9394c88361c2.jpg"
+         }
+      },
+      {
+         "type": "carousel",
+         "data" : {
+             "items" : [
+                 {
+                   "petId": 1,
+                   "imageUrl" : "https://s2.glbimg.com/kmbgBzKPL0URISIQenPiAKo4ORI=/e.glbimg.com/og/ed/f/original/2017/08/23/5c147f01-dff6-4952-98a0-9394c88361c2.jpg"
+                 },
+                 {
+                   "petId": 2,
+                   "imageUrl" : "https://s2.glbimg.com/kmbgBzKPL0URISIQenPiAKo4ORI=/e.glbimg.com/og/ed/f/original/2017/08/23/5c147f01-dff6-4952-98a0-9394c88361c2.jpg"
+                 },
+                 {
+                   "petId": 3,
+                   "imageUrl" : "https://s2.glbimg.com/kmbgBzKPL0URISIQenPiAKo4ORI=/e.glbimg.com/og/ed/f/original/2017/08/23/5c147f01-dff6-4952-98a0-9394c88361c2.jpg"
+                 },
+                 {
+                   "petId": 4,
+                   "imageUrl" : "https://s2.glbimg.com/kmbgBzKPL0URISIQenPiAKo4ORI=/e.glbimg.com/og/ed/f/original/2017/08/23/5c147f01-dff6-4952-98a0-9394c88361c2.jpg"
+                 },
+             ],
+             "action": {
+                 "type": "sheet",
+                 "destination": "petDetail"
+             },
+         },
+      },
+      {
+         "type":"featuredImage",
+         "data":{
+             "imageUrl" : "https://s2.glbimg.com/kmbgBzKPL0URISIQenPiAKo4ORI=/e.glbimg.com/og/ed/f/original/2017/08/23/5c147f01-dff6-4952-98a0-9394c88361c2.jpg"
+         }
+      },
+   ]
+}
